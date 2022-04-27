@@ -483,6 +483,7 @@ public class tictactoe extends javax.swing.JFrame {
         jButton10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton10ActionPerformed(evt);
+                resetButtons();
             }
         });
 
