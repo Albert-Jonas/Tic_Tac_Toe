@@ -18,7 +18,7 @@ import javax.swing.JOptionPane;
  */
 public class tictactoe extends javax.swing.JFrame {
 
-    //ez egy fa
+    //alma
     
     private String startGame = "X";
     private int xCount = 0;
