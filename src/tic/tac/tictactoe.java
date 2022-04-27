@@ -49,7 +49,18 @@ public class tictactoe extends javax.swing.JFrame {
         }
     }
     
-    
+    private void resetButtons()
+    {
+        txtbtn1.setEnabled(true);
+        txtbtn2.setEnabled(true);
+        txtbtn3.setEnabled(true);
+        txtbtn4.setEnabled(true);
+        txtbtn5.setEnabled(true);
+        txtbtn6.setEnabled(true);
+        txtbtn7.setEnabled(true);
+        txtbtn8.setEnabled(true);
+        txtbtn9.setEnabled(true);
+    }
     
     private void winningGame()
     {
@@ -77,6 +88,8 @@ public class tictactoe extends javax.swing.JFrame {
             txtbtn1.setBackground(Color.BLUE);
             txtbtn2.setBackground(Color.BLUE);
             txtbtn3.setBackground(Color.BLUE);
+
+            resetButtons();
             
         }
         
@@ -88,7 +101,9 @@ public class tictactoe extends javax.swing.JFrame {
             
             txtbtn4.setBackground(Color.BLUE);
             txtbtn5.setBackground(Color.BLUE);
-            txtbtn6.setBackground(Color.BLUE);           
+            txtbtn6.setBackground(Color.BLUE);
+
+            resetButtons();
         }
          
         if(b7 == ("X") && b8 ==("X") && b9 == ("X"))
@@ -110,7 +125,9 @@ public class tictactoe extends javax.swing.JFrame {
             
             txtbtn1.setBackground(Color.BLUE);
             txtbtn4.setBackground(Color.BLUE);
-            txtbtn7.setBackground(Color.BLUE);           
+            txtbtn7.setBackground(Color.BLUE);
+
+            resetButtons();
         }
         
         if(b2 == ("X") && b5 ==("X") && b8 == ("X"))
@@ -121,7 +138,9 @@ public class tictactoe extends javax.swing.JFrame {
             
             txtbtn2.setBackground(Color.BLUE);
             txtbtn5.setBackground(Color.BLUE);
-            txtbtn8.setBackground(Color.BLUE);           
+            txtbtn8.setBackground(Color.BLUE);
+
+            resetButtons();
         }
         if(b3 == ("X") && b6 ==("X") && b9 == ("X"))
         {
@@ -131,7 +150,9 @@ public class tictactoe extends javax.swing.JFrame {
             
             txtbtn3.setBackground(Color.BLUE);
             txtbtn6.setBackground(Color.BLUE);
-            txtbtn9.setBackground(Color.BLUE);           
+            txtbtn9.setBackground(Color.BLUE);
+
+            resetButtons();
         }
         
         
@@ -143,7 +164,9 @@ public class tictactoe extends javax.swing.JFrame {
             
             txtbtn1.setBackground(Color.BLUE);
             txtbtn5.setBackground(Color.BLUE);
-            txtbtn9.setBackground(Color.BLUE);           
+            txtbtn9.setBackground(Color.BLUE);
+
+            resetButtons();
         }
         
         if(b3 == ("X") && b5 ==("X") && b7 == ("X"))
@@ -154,7 +177,9 @@ public class tictactoe extends javax.swing.JFrame {
             
             txtbtn3.setBackground(Color.BLUE);
             txtbtn5.setBackground(Color.BLUE);
-            txtbtn7.setBackground(Color.BLUE);           
+            txtbtn7.setBackground(Color.BLUE);
+
+            resetButtons();
         }
         
         
@@ -171,6 +196,8 @@ public class tictactoe extends javax.swing.JFrame {
             txtbtn1.setBackground(Color.BLUE);
             txtbtn2.setBackground(Color.BLUE);
             txtbtn3.setBackground(Color.BLUE);
+
+            resetButtons();
             
         }
         
@@ -182,7 +209,9 @@ public class tictactoe extends javax.swing.JFrame {
             
             txtbtn4.setBackground(Color.BLUE);
             txtbtn5.setBackground(Color.BLUE);
-            txtbtn6.setBackground(Color.BLUE);           
+            txtbtn6.setBackground(Color.BLUE);
+
+            resetButtons();
         }
          
         if(b7 == ("O") && b8 ==("O") && b9 == ("O"))
@@ -193,7 +222,9 @@ public class tictactoe extends javax.swing.JFrame {
             
             txtbtn7.setBackground(Color.BLUE);
             txtbtn8.setBackground(Color.BLUE);
-            txtbtn9.setBackground(Color.BLUE);           
+            txtbtn9.setBackground(Color.BLUE);
+
+            resetButtons();
         }
         
         if(b1 == ("O") && b4 ==("O") && b7 == ("O"))
@@ -323,6 +354,7 @@ public class tictactoe extends javax.swing.JFrame {
         txtbtn1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtbtn1ActionPerformed(evt);
+                txtbtn1.setEnabled(false);
             }
         });
 
@@ -331,6 +363,7 @@ public class tictactoe extends javax.swing.JFrame {
         txtbtn2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtbtn2ActionPerformed(evt);
+                txtbtn2.setEnabled(false);
             }
         });
 
@@ -339,6 +372,7 @@ public class tictactoe extends javax.swing.JFrame {
         txtbtn3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtbtn3ActionPerformed(evt);
+                txtbtn3.setEnabled(false);
             }
         });
 
@@ -347,6 +381,7 @@ public class tictactoe extends javax.swing.JFrame {
         txtbtn4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtbtn4ActionPerformed(evt);
+                txtbtn4.setEnabled(false);
             }
         });
 
@@ -355,6 +390,7 @@ public class tictactoe extends javax.swing.JFrame {
         txtbtn5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtbtn5ActionPerformed(evt);
+                txtbtn5.setEnabled(false);
             }
         });
 
@@ -363,6 +399,7 @@ public class tictactoe extends javax.swing.JFrame {
         txtbtn6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtbtn6ActionPerformed(evt);
+                txtbtn6.setEnabled(false);
             }
         });
 
@@ -371,6 +408,7 @@ public class tictactoe extends javax.swing.JFrame {
         txtbtn7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtbtn7ActionPerformed(evt);
+                txtbtn7.setEnabled(false);
             }
         });
 
@@ -379,6 +417,7 @@ public class tictactoe extends javax.swing.JFrame {
         txtbtn8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtbtn8ActionPerformed(evt);
+                txtbtn8.setEnabled(false);
             }
         });
 
@@ -387,6 +426,7 @@ public class tictactoe extends javax.swing.JFrame {
         txtbtn9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtbtn9ActionPerformed(evt);
+                txtbtn9.setEnabled(false);
             }
         });
 
@@ -548,6 +588,7 @@ public class tictactoe extends javax.swing.JFrame {
         txtbtn9.setText(null);
         
       
+        txtbtn1.setBackground(Color.LIGHT_GRAY);
         txtbtn2.setBackground(Color.LIGHT_GRAY);
         txtbtn3.setBackground(Color.LIGHT_GRAY);
         
