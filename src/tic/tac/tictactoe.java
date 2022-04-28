@@ -18,7 +18,7 @@ import javax.swing.JOptionPane;
  */
 public class tictactoe extends javax.swing.JFrame {
 
-    //comment, amit én tettem bele
+    //Csak próba! ;)
     
     private String startGame = "X";
     private int xCount = 0;
